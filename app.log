@@ -1,0 +1,73 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/C:/Users/Joshc/.m2/repository/ch/qos/logback/logback-classic/1.2.11/logback-classic-1.2.11.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/C:/Users/Joshc/.m2/repository/org/apache/logging/log4j/log4j-slf4j-impl/2.18.0/log4j-slf4j-impl-2.18.0.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [ch.qos.logback.classic.util.ContextSelectorStaticBinder]
+13:55:32.959 [Thread-0] DEBUG org.springframework.boot.devtools.restart.classloader.RestartClassLoader - Created RestartClassLoader org.springframework.boot.devtools.restart.classloader.RestartClassLoader@45730827
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.7.3)
+
+2022-09-16 13:55:33.549  INFO 6456 --- [  restartedMain] com.blockchain.voting.VotingApplication  : Starting VotingApplication using Java 17.0.2 on DESKTOP-P34TF4P with PID 6456 (D:\voting\secure-voting-web\target\classes started by Joshc in D:\voting)
+2022-09-16 13:55:33.550  INFO 6456 --- [  restartedMain] com.blockchain.voting.VotingApplication  : The following 1 profile is active: "qldb"
+2022-09-16 13:55:33.619  INFO 6456 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-09-16 13:55:33.619  INFO 6456 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-09-16 13:55:35.651  INFO 6456 --- [  restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=f799e93f-cd7f-3092-9606-280a42b5cc7f
+2022-09-16 13:55:35.844  INFO 6456 --- [  restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'credentialsProvider' of type [com.amazonaws.auth.AWSCredentialsProviderChain] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-09-16 13:55:36.517  INFO 6456 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2022-09-16 13:55:36.537  INFO 6456 --- [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-09-16 13:55:36.537  INFO 6456 --- [  restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-16 13:55:36.700  INFO 6456 --- [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-09-16 13:55:36.700  INFO 6456 --- [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3080 ms
+2022-09-16 13:55:39.227  INFO 6456 --- [  restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-09-16 13:55:39.316  INFO 6456 --- [  restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1fb698c9, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@522da035, org.springframework.security.web.context.SecurityContextPersistenceFilter@7a0b835e, org.springframework.security.web.header.HeaderWriterFilter@aa61859, org.springframework.web.filter.CorsFilter@7f07b653, org.springframework.security.web.authentication.logout.LogoutFilter@40f9d52a, com.blockchain.voting.services.security.jwt.AuthTokenFilter@654c135b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@574576ba, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7cbadb43, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@18d9366, org.springframework.security.web.session.SessionManagementFilter@4f3b77a1, org.springframework.security.web.access.ExceptionTranslationFilter@379cd585, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@379d5e7]
+2022-09-16 13:55:39.317  INFO 6456 --- [  restartedMain] com.blockchain.voting.config.QLDBConfig  : Initialing the QLDB Driver
+2022-09-16 13:55:41.001  INFO 6456 --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-09-16 13:55:41.162  INFO 6456 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2022-09-16 13:55:41.194  INFO 6456 --- [  restartedMain] com.blockchain.voting.VotingApplication  : Started VotingApplication in 8.218 seconds (JVM running for 9.521)
+I am into an Spring Component
+2022-09-16 13:55:41.263  INFO 6456 --- [  restartedMain] c.b.v.Q.c.CreateSecureVotingSysLedger    : Creating ledger: Voting...
+2022-09-16 13:55:42.440  INFO 6456 --- [  restartedMain] c.b.v.Q.c.CreateSecureVotingSysLedger    : Ledger name already exists (Service: AmazonQLDB; Status Code: 409; Error Code: ResourceAlreadyExistsException; Request ID: bcecc8dc-74e4-47a8-8ac2-61fba684e82b; Proxy: null)
+2022-09-16 13:55:42.440  INFO 6456 --- [  restartedMain] c.b.v.Q.c.CreateSecureVotingSysLedger    : Checking ledger status...
+2022-09-16 13:55:42.590  INFO 6456 --- [  restartedMain] c.b.v.Q.c.CreateSecureVotingSysLedger    : Ledger status is active and ready for use.
+2022-09-16 13:55:42.591  INFO 6456 --- [  restartedMain] c.b.v.Q.c.CreateSecureVotingSysLedger    : Ledger description: {Name: Voting,Arn: arn:aws:qldb:eu-west-2:955843462740:ledger/Voting,State: ACTIVE,CreationDateTime: Fri Sep 16 11:02:24 BST 2022,PermissionsMode: ALLOW_ALL,DeletionProtection: true,}
+2022-09-16 13:55:42.594  INFO 6456 --- [  restartedMain] com.blockchain.voting.config.QLDBConfig  : Initialing the QLDB Driver
+2022-09-16 13:55:42.599  INFO 6456 --- [  restartedMain] com.blockchain.voting.config.QLDBConfig  : QLDB Driver Initialised
+2022-09-16 13:55:43.411  INFO 6456 --- [  restartedMain] c.b.v.Q.createTable.CandidateTable       : Creating the 'Candidates' table...
+2022-09-16 13:55:43.489  INFO 6456 --- [  restartedMain] c.b.v.Q.createTable.CandidateTable       : Table with name: USER.Candidates already exists (Service: QldbSession, Status Code: 400, Request ID: 9s8wkDxkzEVAUXgWwNNjut, Extended Request ID: null)
+2022-09-16 13:55:53.785  INFO 6456 --- [  restartedMain] c.b.v.Q.createTable.ElectionTable        : Creating the 'Election' table...
+2022-09-16 13:55:53.820  INFO 6456 --- [  restartedMain] c.b.v.Q.createTable.ElectionTable        : Table with name: USER.Election already exists (Service: QldbSession, Status Code: 400, Request ID: CRpgOlzwVGj69tKHKjscNd, Extended Request ID: null)
+2022-09-16 13:56:04.054  INFO 6456 --- [  restartedMain] c.b.v.Q.createTable.CandidateTable       : Creating an index on CandidateName...
+2022-09-16 13:56:04.087  INFO 6456 --- [  restartedMain] c.b.v.Q.createTable.CandidateTable       : Proposed index on DocumentPath(path=[Member(memberName=CandidateName)]) conflicts with DocumentPath(path=[Member(memberName=CandidateName)]) (Service: QldbSession, Status Code: 400, Request ID: DuK6GkcO4PS53DWtslZvTv, Extended Request ID: null)
+2022-09-16 13:56:04.087  INFO 6456 --- [  restartedMain] c.b.v.Q.createTable.CandidateTable       : Creating an index on CandidateID...
+2022-09-16 13:56:04.186  INFO 6456 --- [  restartedMain] c.b.v.Q.createTable.CandidateTable       : Proposed index on DocumentPath(path=[Member(memberName=CandidateID)]) conflicts with DocumentPath(path=[Member(memberName=CandidateID)]) (Service: QldbSession, Status Code: 400, Request ID: 543ZWX67KnwHjrr8788jY2, Extended Request ID: null)
+2022-09-16 13:56:04.343  INFO 6456 --- [  restartedMain] c.b.v.Q.createTable.CandidateTable       : Indexes created successfully!
+2022-09-16 13:56:14.441  INFO 6456 --- [  restartedMain] c.b.v.Q.createTable.ElectionTable        : Creating an index on ElectionType...
+2022-09-16 13:56:14.474  INFO 6456 --- [  restartedMain] c.b.v.Q.createTable.ElectionTable        : Proposed index on DocumentPath(path=[Member(memberName=ElectionType)]) conflicts with DocumentPath(path=[Member(memberName=ElectionType)]) (Service: QldbSession, Status Code: 400, Request ID: InjV0nHjUB43IJiFKILZ8n, Extended Request ID: null)
+2022-09-16 13:56:14.475  INFO 6456 --- [  restartedMain] c.b.v.Q.createTable.ElectionTable        : Creating an index on ElectionID...
+2022-09-16 13:56:14.594  INFO 6456 --- [  restartedMain] c.b.v.Q.createTable.ElectionTable        : Proposed index on DocumentPath(path=[Member(memberName=ElectionID)]) conflicts with DocumentPath(path=[Member(memberName=ElectionID)]) (Service: QldbSession, Status Code: 400, Request ID: Djg3E313Ps72Y4iRnUTXMQ, Extended Request ID: null)
+2022-09-16 13:56:14.753  INFO 6456 --- [  restartedMain] c.b.v.Q.createTable.ElectionTable        : Indexes created successfully!
+2022-09-16 13:56:24.824  INFO 6456 --- [  restartedMain] c.b.v.Q.createTable.VoteTable            : Creating the 'Vote' table...
+2022-09-16 13:56:24.869  INFO 6456 --- [  restartedMain] c.b.v.Q.createTable.VoteTable            : Table with name: USER.Vote already exists (Service: QldbSession, Status Code: 400, Request ID: IyNY3Ut5b136cIuVtxZnb1, Extended Request ID: null)
+2022-09-16 13:56:35.079  INFO 6456 --- [  restartedMain] c.b.v.Q.createTable.VoteTable            : Creating an index on VoteID...
+2022-09-16 13:56:35.114  INFO 6456 --- [  restartedMain] c.b.v.Q.createTable.VoteTable            : Proposed index on DocumentPath(path=[Member(memberName=VoteID)]) conflicts with DocumentPath(path=[Member(memberName=VoteID)]) (Service: QldbSession, Status Code: 400, Request ID: Cn7mUBCg7ktHjwHfR3Xhmw, Extended Request ID: null)
+2022-09-16 13:56:35.115  INFO 6456 --- [  restartedMain] c.b.v.Q.createTable.VoteTable            : Creating an index on CandidateVoted...
+2022-09-16 13:56:35.227  INFO 6456 --- [  restartedMain] c.b.v.Q.createTable.VoteTable            : Proposed index on DocumentPath(path=[Member(memberName=CandidateVoted)]) conflicts with DocumentPath(path=[Member(memberName=CandidateVoted)]) (Service: QldbSession, Status Code: 400, Request ID: 4I9LpMt6BLqL4KdbzVzOMx, Extended Request ID: null)
+2022-09-16 13:56:35.228  INFO 6456 --- [  restartedMain] c.b.v.Q.createTable.VoteTable            : Creating an index on Election...
+2022-09-16 13:56:35.353  INFO 6456 --- [  restartedMain] c.b.v.Q.createTable.VoteTable            : Proposed index on DocumentPath(path=[Member(memberName=Election)]) conflicts with DocumentPath(path=[Member(memberName=Election)]) (Service: QldbSession, Status Code: 400, Request ID: BabRBFzGOMZ7Absqdc0y5W, Extended Request ID: null)
+2022-09-16 13:56:35.502  INFO 6456 --- [  restartedMain] c.b.v.Q.createTable.VoteTable            : Indexes created successfully!
+2022-09-16 13:56:45.599  INFO 6456 --- [  restartedMain] c.b.v.Q.createTable.VoterTable           : Creating the 'Voter' table...
+2022-09-16 13:56:45.633  INFO 6456 --- [  restartedMain] c.b.v.Q.createTable.VoterTable           : Table with name: USER.Voter already exists (Service: QldbSession, Status Code: 400, Request ID: B9zJZUyueO9EIRz1HovrE3, Extended Request ID: null)
+2022-09-16 13:56:55.864  INFO 6456 --- [  restartedMain] c.b.v.Q.createTable.VoterTable           : Creating an index on VoterID...
+2022-09-16 13:56:55.893  INFO 6456 --- [  restartedMain] c.b.v.Q.createTable.VoterTable           : Proposed index on DocumentPath(path=[Member(memberName=VoterID)]) conflicts with DocumentPath(path=[Member(memberName=VoterID)]) (Service: QldbSession, Status Code: 400, Request ID: 2uyxTk4MW9K48bLnGCwZsX, Extended Request ID: null)
+2022-09-16 13:56:55.893  INFO 6456 --- [  restartedMain] c.b.v.Q.createTable.VoterTable           : Creating an index on Gender...
+2022-09-16 13:56:56.015  INFO 6456 --- [  restartedMain] c.b.v.Q.createTable.VoterTable           : Proposed index on DocumentPath(path=[Member(memberName=Gender)]) conflicts with DocumentPath(path=[Member(memberName=Gender)]) (Service: QldbSession, Status Code: 400, Request ID: 65vrmkiFIFN4ijvAFQcZvn, Extended Request ID: null)
+2022-09-16 13:56:56.015  INFO 6456 --- [  restartedMain] c.b.v.Q.createTable.VoterTable           : Creating an index on Location...
+2022-09-16 13:56:56.129  INFO 6456 --- [  restartedMain] c.b.v.Q.createTable.VoterTable           : Proposed index on DocumentPath(path=[Member(memberName=Location)]) conflicts with DocumentPath(path=[Member(memberName=Location)]) (Service: QldbSession, Status Code: 400, Request ID: LI6D8zWHYIwDCX7dNosrBB, Extended Request ID: null)
+2022-09-16 13:56:56.256  INFO 6456 --- [  restartedMain] c.b.v.Q.createTable.VoterTable           : Indexes created successfully!
+2022-09-16 13:57:06.536  INFO 6456 --- [  restartedMain] c.b.v.Q.insertDocument.InsertDocument    : Inserting some documents in the Election table...
